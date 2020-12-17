@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BannerHeaderView" customModule="Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9Z-7i-hly">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ce4-2t-X0C">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="psn-fY-Acl">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Ce4-2t-X0C" firstAttribute="top" secondItem="s9Z-7i-hly" secondAttribute="top" id="RBL-gI-HSk"/>
+                        <constraint firstItem="Ce4-2t-X0C" firstAttribute="leading" secondItem="s9Z-7i-hly" secondAttribute="leading" id="Sfg-fu-zJx"/>
+                        <constraint firstAttribute="trailing" secondItem="Ce4-2t-X0C" secondAttribute="trailing" id="aVC-gH-vVp"/>
+                        <constraint firstAttribute="bottom" secondItem="Ce4-2t-X0C" secondAttribute="bottom" id="roT-gD-lu9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="s9Z-7i-hly" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BGX-UK-Mgp"/>
+                <constraint firstItem="s9Z-7i-hly" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Oav-Zl-5JN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="s9Z-7i-hly" secondAttribute="trailing" id="SBA-GE-H1X"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="s9Z-7i-hly" secondAttribute="bottom" id="Xij-To-axY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bannerCollectionView" destination="Ce4-2t-X0C" id="gEO-sw-pNb"/>
+            </connections>
+            <point key="canvasLocation" x="138.75" y="-31.875"/>
+        </view>
+    </objects>
+</document>
